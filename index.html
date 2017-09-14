@@ -1,0 +1,33 @@
+
+<!doctype html>
+<head>
+	<title>자바스크립트 과제</title>
+	<style>
+		input{font-size: 1em;}
+		button{font-size: 1em;}
+		body{font-size: 2em;}
+	</style>
+</head>
+<meta charset="UTF-8">
+<body>
+	<h1 id="display">단리 계산기</h1>
+	<input type="text" id = "oneGold" placeholder="원금을 입력하세요.">원
+	<input type="text" id = "monthGold" placeholder="월납입액을 입력하세요.">원
+	<input type="text" id = "month" placeholder="납입 개월수를 입력하세요.">개월
+	<input type="text" id = "interest" placeholder="이자율을 입력하세요.">%
+	<br><button id="action">계산하기</button>
+	<script>
+		action.onclick = function(){
+			var myOnegold = onGold.value*month.value;
+			var myInterest = (monthGold.value*month.value)*(month.value+1)/2*interest.value/12;
+			oneGold (myOnegold,myMounth);
+		}
+		
+		function oneGold(myOnegold*myInterest){
+			
+			var text = "당신의 예상수령금액은 " + oneGold + "원 입니다.";
+			display.innerHTML = text;
+		}
+		
+	</script>
+</body>
